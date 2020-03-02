@@ -21,7 +21,7 @@ class TestKey(unittest.TestCase):
         e = selecionar_e(phi)
         self.assertLessEqual(e, phi, "Deve ser menor ou igual a phi (tocient)")
         self.assertGreaterEqual(e, 2, "Deve ser maior ou igual 2")
-        self.assertTrue(is_relative_prime(e, phi), "Deve ser verdadeiro")
+        self.assertTrue(is_relatively_prime(e, phi), "Deve ser verdadeiro")
 
     def test_d(self):
         # TODO: adicionar exemplo do livro stalllings para validar d
