@@ -32,5 +32,5 @@ def set_context_decrypt(message, p, q):
     context['d'] = calcular_d(context['e'], context['tocient'])
     context['public_key'] = (context['n'], context['e'])
     context['encrypted_text'] = encrypt(context['plain_text'], context['n'], context['e'])
-    context['decrypted_text'] = decrypt(context['plain_text'], context['n'], context['d'])
+    context['decrypted_text'] = decrypt(context['encrypted_text'], context['n'], context['d'])
     return context
