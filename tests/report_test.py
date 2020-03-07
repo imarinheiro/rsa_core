@@ -1,7 +1,7 @@
 # coding: utf-8
 import unittest
 
-from rsa.decrypt import decrypt
+from rsa.decrypt import decrypt_number
 from rsa.encrypt import encrypt_number
 from rsa.key import calculate_tocient, select_e, calculate_n, calculate_d
 from rsa.report import set_context_encrypt, set_context_decrypt
@@ -18,7 +18,7 @@ class TestReport(unittest.TestCase):
         self.d = calculate_d(self.e, self.phi)
         self.message = 88
         self.encrypted_message = encrypt_number(88, self.n, self.e)
-        self.decrypted_message = decrypt(44, self.n, self.d)
+        self.decrypted_message = decrypt_number(44, self.n, self.d)
 
     def test_context_encrypt(self):
         context = set_context_encrypt(self.message, self.p, self.q)

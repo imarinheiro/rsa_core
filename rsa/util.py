@@ -1,5 +1,6 @@
 # coding: utf-8
 
+
 def is_relatively_prime(a, b):
     """Retorna ``True`` se ``a`` e ``b`` forem relativamente numeros primos.
     Dois numeros são relativamente primos se não compatilharem fatores comuns,
@@ -9,3 +10,11 @@ def is_relatively_prime(a, b):
         if a % n == b % n == 0:
             return False
     return True
+
+
+def transform_string_to_number(text: str):
+    return ord(text)
+
+
+def transform_number_to_string(number: int):
+    return chr(number)

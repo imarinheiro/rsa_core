@@ -1,7 +1,7 @@
 # coding: utf-8
 import unittest
 
-from rsa.decrypt import decrypt
+from rsa.decrypt import decrypt_number
 from rsa.encrypt import encrypt_number
 from rsa.key import calculate_tocient, select_e, calculate_n, calculate_d
 
@@ -19,7 +19,7 @@ class TestDecrypt(unittest.TestCase):
         self.encrypted_message = encrypt_number(88, self.n, self.e)
 
     def test_decrypt(self):
-        decrypted_message = decrypt(self.encrypted_message, self.n, self.d)
+        decrypted_message = decrypt_number(self.encrypted_message, self.n, self.d)
         self.assertEqual(decrypted_message, self.message, "It must be equal")
 
 
