@@ -11,15 +11,15 @@ class TestUtil(unittest.TestCase):
         self.p = 17
         self.q = 11
 
-    def test_relative_prime(self):
+    def test_relatively_prime(self):
         phi = calculate_tocient(self.p, self.q)
         e = select_e(phi)
-        self.assertTrue(is_relatively_prime(e, phi), "Deve ser relativamente primo")
+        self.assertTrue(is_relatively_prime(e, phi), "It must be relatively prime")
 
-    def test_not_relative_prime(self):
+    def test_not_relatively_prime(self):
         phi = calculate_tocient(self.p, self.q)
         e = 8
-        self.assertFalse(is_relatively_prime(e, phi), "Não deve ser relativamente primo")
+        self.assertFalse(is_relatively_prime(e, phi), "It shouldn't be relatively prime")
 
 
 if __name__ == '__main__':

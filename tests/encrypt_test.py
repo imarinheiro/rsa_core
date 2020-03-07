@@ -19,7 +19,7 @@ class TestEncrypt(unittest.TestCase):
 
     def test_encrypt(self):
         encrypted_message = encrypt_number(self.message, self.n, self.e)
-        self.assertEqual(encrypted_message, self.encrypted_message, "Deve ser igual")
+        self.assertEqual(encrypted_message, self.encrypted_message, "It must be equal")
 
 
 if __name__ == '__main__':

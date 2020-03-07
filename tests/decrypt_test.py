@@ -20,7 +20,7 @@ class TestDecrypt(unittest.TestCase):
 
     def test_decrypt(self):
         decrypted_message = decrypt(self.encrypted_message, self.n, self.d)
-        self.assertEqual(decrypted_message, self.message, "Deve ser igual")
+        self.assertEqual(decrypted_message, self.message, "It must be equal")
 
 
 if __name__ == '__main__':
