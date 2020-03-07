@@ -4,6 +4,8 @@ import unittest
 from rsa.encrypt import encrypt_number
 from rsa.key import calculate_tocient, calculate_n, calculate_d
 
+ENCRYPT_MESSAGE = "It must be equal"
+
 
 class TestEncrypt(unittest.TestCase):
 
@@ -19,7 +21,7 @@ class TestEncrypt(unittest.TestCase):
 
     def test_encrypt(self):
         encrypted_message = encrypt_number(self.message, self.n, self.e)
-        self.assertEqual(encrypted_message, self.encrypted_message, "It must be equal")
+        self.assertEqual(encrypted_message, self.encrypted_message, ENCRYPT_MESSAGE)
 
 
 if __name__ == '__main__':

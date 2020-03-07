@@ -86,8 +86,5 @@ class TestReport(unittest.TestCase):
         self.assertEqual(context['decrypted_text'], self.decrypted_text, DECRYPTED_MESSAGE)
 
 
-
-
-
 if __name__ == '__main__':
     unittest.main()

@@ -5,6 +5,7 @@ from rsa.decrypt import decrypt_number
 from rsa.encrypt import encrypt_number
 from rsa.key import calculate_tocient, select_e, calculate_n, calculate_d
 
+DECRYPT_MESSAGE = "It must be equal"
 
 class TestDecrypt(unittest.TestCase):
 
@@ -20,7 +21,7 @@ class TestDecrypt(unittest.TestCase):
 
     def test_decrypt(self):
         decrypted_message = decrypt_number(self.encrypted_message, self.n, self.d)
-        self.assertEqual(decrypted_message, self.message, "It must be equal")
+        self.assertEqual(decrypted_message, self.message, DECRYPT_MESSAGE)
 
 
 if __name__ == '__main__':
