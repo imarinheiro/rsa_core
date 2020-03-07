@@ -46,7 +46,7 @@ def set_context_encrypt_string(texto, p, q):
     context['e'] = select_e(context['tocient'])
     context['d'] = calculate_d(context['e'], context['tocient'])
     context['public_key'] = (context['n'], context['e'])
-    context['encrypted_text'] = decrypt_string(context['plain_text'], context['n'], context['e'])
+    context['encrypted_text'] = encrypt_string(context['plain_text'], context['n'], context['e'])
     return context
 
 
