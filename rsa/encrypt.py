@@ -3,5 +3,6 @@
 
 # TODO: Adicionar doc strings
 
-def encrypt(message, n, e):
+def encrypt_number(message: int, n, e):
     return pow(message, e, n)
+

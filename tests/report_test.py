@@ -2,8 +2,8 @@
 import unittest
 
 from rsa.decrypt import decrypt
-from rsa.encrypt import encrypt
-from rsa.key import calcular_tocient, selecionar_e, calcular_n, calcular_d
+from rsa.encrypt import encrypt_number
+from rsa.key import calculate_tocient, select_e, calculate_n, calculate_d
 from rsa.report import set_context_encrypt, set_context_decrypt
 
 
@@ -12,12 +12,12 @@ class TestReport(unittest.TestCase):
     def setUp(self):
         self.p = 17
         self.q = 11
-        self.n = calcular_n(self.p, self.q)
-        self.phi = calcular_tocient(self.p, self.q)
-        self.e = selecionar_e(self.phi)
-        self.d = calcular_d(self.e, self.phi)
+        self.n = calculate_n(self.p, self.q)
+        self.phi = calculate_tocient(self.p, self.q)
+        self.e = select_e(self.phi)
+        self.d = calculate_d(self.e, self.phi)
         self.message = 88
-        self.encrypted_message = encrypt(88, self.n, self.e)
+        self.encrypted_message = encrypt_number(88, self.n, self.e)
         self.decrypted_message = decrypt(44, self.n, self.d)
 
     def test_context_encrypt(self):
