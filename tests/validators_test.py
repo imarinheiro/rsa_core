@@ -1,8 +1,8 @@
 # coding: utf-8
 import unittest
 
-from rsa.validators import is_prime, key_length, PRIME_EXCEPTION, LENGTH_KEY_EXCEPTION, MESSAGE_EXCEPTION, \
-    message_length
+from rsa.validators import PRIME_EXCEPTION, LENGTH_KEY_EXCEPTION, MESSAGE_EXCEPTION
+from rsa.validators import is_prime, key_length, message_length
 
 
 class TestUtil(unittest.TestCase):
