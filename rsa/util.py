@@ -19,7 +19,7 @@ def is_relatively_prime(a, b):
 
 def transform_string_to_number(text: str):
     """
-    Transforma o texto informado no parâmetro para seu inteiro correspondente
+    Transforma o texto informado no parâmetro para seu inteiro correspondente.
 
     :param text: texto que deve ser convertido para número
     :return: número inteiro convertido a partir do parâmetro text
@@ -29,7 +29,7 @@ def transform_string_to_number(text: str):
 
 def transform_number_to_string(number: int):
     """
-    Transforma o número informado no parametro para seu texto original
+    Transforma o número informado no parametro para seu texto original.
 
     :param number: número que deve ser convertido para string novamente
     :return: texto convertido a partir do parametro number
