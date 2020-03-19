@@ -26,7 +26,7 @@ Instalação
 
 * ``$ pip install -r requirements.txt``
 * ``$ python setup.py sdist``
-* ``$ pip install -e  s_aes/``
+* ``$ pip install -e  rsa/``
 
 
 
