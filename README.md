@@ -23,13 +23,33 @@
 
 ## CLI ##
 
-### Criptografia ###
+### Geração de Chaves (Pública e Privada), Criptografia e Descriptografia com Chave ###
 
-* ``` $ encrypt -k (chave) -t (texto) ```
-* ``` $ encrypt -k (chave) -t (texto) -p (opcional: caminho para salvar o relatório) ```
+* ``` $ keygen ```
+    * ```-k``` (número) (número)
+    * ```-p``` (opcional: caminho para salvar o relatório)
+* ``` $ cipher ```
+    * ```-k``` (número) (número)
+    * ```-t``` (mensagem)
+    * ```--is-number``` ou ```--is-text``` (default --is-number) (tipo da criptografia)
+    * ```-p``` (opcional: caminho para salvar o relatório)
+* ``` $ decipher```
+    * ```-k``` (número) (número)
+    * ```-t``` (mensagem criptografada) 
+    * ```--is-number``` ou ```--is-text``` (default --is-number)  (tipo da criptografia)
+    * ```-p``` (opcional: caminho para salvar o relatório)
 
-### Descriptografia ###
+### Criptografia e Descriptografia sem Chave ###
 
-* ``` $ decrypt -k (chave) -t (texto) ```
+* ``` $ encryptor ```
+    * ```-k``` (número primo) (número primo)
+    * ```-t``` (mensagem)
+    * ```--is-number``` ou ```--is-text``` (default --is-number) (tipo da criptografia)
+    * ```-p``` (opcional: caminho para salvar o relatório)
+* ``` $ decryptor ```
+    * ```-k``` (número primo) (número primo)
+    * ```-t``` (mensagem)
+    * ```--is-number``` ou ```--is-text``` (default --is-number)  (tipo da criptografia)
+    * ```-p``` (opcional: caminho para salvar o relatório)
 
 ***

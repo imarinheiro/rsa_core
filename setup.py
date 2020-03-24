@@ -21,8 +21,11 @@ setuptools.setup(
     python_requires='>=3',
     entry_points={
         'console_scripts': [
+            'keygen=rsa.keygen:main',
             'cipher=rsa.cipher:main',
             'decipher=rsa.decipher:main',
+            'encryptor=rsa.encryptor:main',
+            'decryptor=rsa.decryptor:main',
             'tests=tests.tests:main'
         ],
     },
