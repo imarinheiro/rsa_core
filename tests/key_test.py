@@ -32,7 +32,6 @@ class TestKey(unittest.TestCase):
         self.assertTrue(is_relatively_prime(e, phi), E_IS_PRIME_MESSAGE)
 
     def test_d(self):
-        # TODO: adicionar exemplo do livro stalllings para validar d
         phi = calculate_tocient(self.p, self.q)
         e = 7
         d = calculate_d(e, phi)

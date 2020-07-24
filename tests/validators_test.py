@@ -5,7 +5,7 @@ from rsa.validators import PRIME_EXCEPTION, LENGTH_KEY_EXCEPTION, MESSAGE_EXCEPT
 from rsa.validators import is_prime, key_length, message_length
 
 
-class TestUtil(unittest.TestCase):
+class TestValidators(unittest.TestCase):
 
     def setUp(self):
         self.char = "x"

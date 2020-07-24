@@ -9,7 +9,7 @@
 
 * ``` $ pip install -r requirements.txt ```
 * ``` $ python setup.py sdist ```
-* ``` $ pip install -e  rsa_core/ ```
+* ``` $ pip install rsa_core/ ```
 
 ***
 
